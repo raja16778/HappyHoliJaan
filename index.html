@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Holi - Hacker Aakash</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="welcome-screen">
+        <img src="aakash.jpg" alt="Hacker Aakash" class="profile-pic">
+        <h1>🌸 हैप्पी होली! 🌸</h1>
+        <p>आप सभी को होली की हार्दिक शुभकामनाएँ!</p>
+        <button onclick="enterSite()">Enter</button>
+    </div>
+
+    <div class="main-content" id="mainContent">
+        <h2>🎨 होली के रंगों में आपका स्वागत है! 🎉</h2>
+        <p>मस्ती करो, रंग खेलो, और सुरक्षित होली मनाओ!</p>
+        <audio controls autoplay loop>
+            <source src="holi.mp3" type="audio/mp3">
+            आपका ब्राउज़र ऑडियो सपोर्ट नहीं करता।
+        </audio>
+    </div>
+
+    <script>
+        function enterSite() {
+            document.querySelector(".welcome-screen").style.display = "none";
+            document.getElementById("mainContent").style.display = "block";
+        }
+    </script>
+</body>
+</html>
